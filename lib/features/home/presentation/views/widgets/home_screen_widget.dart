@@ -1,4 +1,5 @@
 import 'package:bookly/core/utils/assets.dart';
+import 'package:bookly/core/utils/constants.dart';
 import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/home/presentation/views/widgets/custom_appbar.dart';
 import 'package:bookly/features/home/presentation/views/widgets/featured_list_view.dart';
@@ -17,7 +18,9 @@ class HomeScreenWidget extends StatelessWidget {
           const CustomAppBar(),
           FeaturedBooksListView(),
           const SizedBox(height: 50,),
-          Text('Best Seller', style: Styles.titleMedium,),
+          Text('Best Seller', style: Styles.textStyle18.copyWith(
+            fontFamily: kGtSectraFine,
+          ),),
           BestSellerItem(),
         ],
       ),
