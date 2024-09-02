@@ -1,4 +1,4 @@
-part of 'newset_books_cubit.dart';
+part of 'newest_books_cubit.dart';
 
 abstract class NewsetBooksState extends Equatable {
   const NewsetBooksState();
